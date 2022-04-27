@@ -1,15 +1,9 @@
 import 'dart:async';
-import 'dart:io';
 import 'dart:isolate';
 
 import '1.mqtt.dart';
 import '3.web_api.dart';
 import 'constantes.dart';
-
-// void main() async {
-//   var fluxoDadosPrincipal = await compartilhamentoMsgDePorta();
-//   fluxoDadosPrincipal.send(mensagemRequisicao);
-// }
 
 Future<SendPort> compartilhamentoMsgDePorta() async {
   Completer completer = Completer<SendPort>();
